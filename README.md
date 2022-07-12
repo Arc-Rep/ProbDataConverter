@@ -33,9 +33,13 @@ This table is supposed to have one column detaining all examples and another wit
 Afterwards, ProbDataConverter will analyze each other table present within the database and repeat the process so that it can understand which column is to be treated as the PV for that table entry. This process is similar to the PE preparation. Be sure to make the example column of each table (the concept you are attempting to learn) to be the first column of each of these tables.
 
 ProbDataConverter then sends an output.pl file to the project root folder that is your probabilistic database. You can write the probdataconv command along with many parameters that customize its runtime to your preferences. These are:
+
     -c \[MYSQL_HOST\] \[MYSQL_USER\] \[MYSQL_PASS\] \[MYSQL_DATABASE\], invoke mysql connection
+
     -h, display help
+
     -o \[OUTPUT_FILE_NAME\], define output name for the probabilistic database (default: output)
+    
     -t 'problog_format'/'skill_format', define probabilistic database format (default: problog)
 
 
